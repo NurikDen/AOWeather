@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AO Weather</string>
+    <string name="your_city">Your City</string>
+    <string name="textview1">Input City name</string>
+    <string name="buttontext1">check the Weather</string>
+    <string name="userinputnothing">Input Text</string>
 </resources>
