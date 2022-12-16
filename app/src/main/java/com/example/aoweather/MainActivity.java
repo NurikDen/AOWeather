@@ -100,12 +100,28 @@ public class MainActivity extends AppCompatActivity {
         }
         @SuppressLint("SetTextI18n")
         protected void onPostExecute(String result){
-            String cityname = edittext2.getText().toString();
+
         super.onPostExecute(result);
 
             try {
                 JSONObject json = new JSONObject(result);
-                textview2.setText("Temperature in " + cityname +": "+ json.getJSONObject("main").getDouble("temp")+"°C");
+
+                double c = json.getJSONObject("main").getDouble("temp");
+                String cityname = edittext2.getText().toString();
+                int temp = (int) Math.round(c);
+
+                double feelslike = json.getJSONObject("main").getDouble("feels_like");
+                int feels = (int) Math.round(feelslike);
+
+                double windspeed = json.getJSONObject("wind").getDouble("speed");
+                int wind = (int) Math.round(windspeed);
+
+                int visibility = json.getInt("visibility");
+
+
+
+                textview2.setText("Temperature in " + cityname +": "+ temp +"°C;" + "\n" + "Feels like "+ feels +"°C;"+"\n"+ "Wind speed: " + wind+" m/s;" +
+                        "\n" + "Visibility: "+ visibility+ "m.");
             } catch (JSONException e) {
                 e.printStackTrace();
             }
