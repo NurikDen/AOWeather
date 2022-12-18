@@ -116,12 +116,14 @@ public class MainActivity extends AppCompatActivity {
                 double windspeed = json.getJSONObject("wind").getDouble("speed");
                 int wind = (int) Math.round(windspeed);
 
+                String description = String.valueOf(json.getJSONArray("weather").getJSONObject(0).getString("description"));
+
                 int visibility = json.getInt("visibility");
 
 
 
-                textview2.setText("Temperature in " + cityname +": "+ temp +"°C;" + "\n" + "Feels like "+ feels +"°C;"+"\n"+ "Wind speed: " + wind+" m/s;" +
-                        "\n" + "Visibility: "+ visibility+ "m.");
+                textview2.setText("Temperature in " + cityname +": "+ temp +"°C;" + "\n" + "feels like "+ feels +"°C;"+"\n"+ "wind speed: " + wind+" m/s;" +
+                        "\n" + "visibility: "+ visibility+ "m;"+ "\n" +description+".");
             } catch (JSONException e) {
                 e.printStackTrace();
             }

@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:background="#000000"
     android:foregroundTint="#1C611F"
+
     tools:context=".MainActivity">
 
     <Button
@@ -90,4 +91,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         tools:visibility="visible" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
