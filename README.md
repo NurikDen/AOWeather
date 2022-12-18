@@ -11,3 +11,6 @@ Thanks to Gosha Dudar !
 #16.12.2022 Second version of my application, which can show visibility,how feels like temperature and wind speed.
 Besides, my application print integer. Вторая версия моего приложения, которая может показать видимость,скорость ветра и как чувствуется температура.
 Кроме того, приложение выводит целое число.
+
+#18.12.2022 Thirth version of my application. I disabled landscape mode. Besides, I added description of weather.
+Третья версия моего приложения. Я отключил горизонтальный режим. Кроме того, я добавил описание погоды.
