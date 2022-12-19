@@ -3,5 +3,9 @@
     <string name="your_city">Your city</string>
     <string name="textview1">Input сity name</string>
     <string name="buttontext1">check the Weather</string>
-    <string name="userinputnothing">Input Text</string>
+    <string name="userinputnothing">Input text</string>
+    <string name="Temperaturein">"Temperature in "</string>
+    <string name="feelslike">"feels like "</string>
+    <string name="windspeed">"wind speed: "</string>
+    <string name="visibility">"visibility: "</string>
 </resources>

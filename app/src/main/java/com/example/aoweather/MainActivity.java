@@ -122,8 +122,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-                textview2.setText("Temperature in " + cityname +": "+ temp +"°C;" + "\n" + "feels like "+ feels +"°C;"+"\n"+ "wind speed: " + wind+" m/s;" +
-                        "\n" + "visibility: "+ visibility+ "m;"+ "\n" +description+".");
+                textview2.setText(getString(R.string.Temperaturein) + cityname +": "+ temp +"°C;" + "\n" + getString(R.string.feelslike)+ feels +"°C;"+"\n"+ getString(R.string.windspeed) + wind+" m/s;" +
+                        "\n" + getString(R.string.visibility)+ visibility+ "m;"+ "\n" +description+".");
             } catch (JSONException e) {
                 e.printStackTrace();
             }
