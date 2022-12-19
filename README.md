@@ -14,3 +14,6 @@ Besides, my application print integer. Вторая версия моего пр
 
 #18.12.2022 Thirth version of my application. I disabled landscape mode. Besides, I added description of weather.
 Третья версия моего приложения. Я отключил горизонтальный режим. Кроме того, я добавил описание погоды.
+
+#19.12.2022 Fourth version of my application. I added Russian and Tatar localization.Besides, I updated application version name.
+Четвертая версия моего приложения. Я добавил Русскую и Татарскую локализацию. Кроме того, обновил номер версии приложения.
