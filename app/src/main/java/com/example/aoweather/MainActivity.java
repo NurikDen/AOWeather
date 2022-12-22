@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
         protected void onPreExecute(){
             super.onPreExecute();
-            textview2.setText("Wait...");
+            textview2.setText(R.string.Wait);
 
         }
 

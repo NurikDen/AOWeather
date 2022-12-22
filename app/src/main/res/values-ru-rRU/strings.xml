@@ -9,4 +9,5 @@
     <string name="feelslike">"чувствуется "</string>
     <string name="windspeed">"cкорость ветра "</string>
     <string name="visibility">"видимость: "</string>
+    <string name="Wait">Ждите...</string>
 </resources>
