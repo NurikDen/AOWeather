@@ -20,3 +20,6 @@ Besides, my application print integer. Вторая версия моего пр
 
 #22.12.2022 I fixed some minor bugs.
 Исправил пару недочетов.
+
+#23.12.2022 I fixed some minor bugs. If the app can't find a city, it prints text, doesn't crash like before. Besides, it skips spaces.
+Исправил пару недочетов. Если приложение не находит город , он выводит текст, а не вылетает как раньше. Кроме того, он пропускает пробелы.
