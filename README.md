@@ -17,3 +17,6 @@ Besides, my application print integer. Вторая версия моего пр
 
 #19.12.2022 Fourth version of my application. I added Russian and Tatar localization.Besides, I updated application version name.
 Четвертая версия моего приложения. Я добавил Русскую и Татарскую локализацию. Кроме того, обновил номер версии приложения.
+
+#22.12.2022 I fixed some minor bugs.
+Исправил пару недочетов.
