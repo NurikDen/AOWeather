@@ -4,10 +4,11 @@
     <string name="your_city" translatable="false">Синең шәһәр</string>
     <string name="textview1" translatable="false">Шәһәр исемен языгыз</string>
     <string name="buttontext1" translatable="false">һава торышын тикшерү</string>
-    <string name="userinputnothing" translatable="false">нәрсәдер языгыз</string>
     <string name="Temperaturein">"Температура "</string>
     <string name="feelslike">"ничек сизелә "</string>
     <string name="windspeed">"җил тизлеге: "</string>
     <string name="visibility">"күренүчәнлек: "</string>
     <string name="Wait">Көтегез...</string>
+    <string name="notfound">Шәһәр табылмады</string>
+    <string name="userinputnothing">Шәһәр исемен языгыз</string>
 </resources>

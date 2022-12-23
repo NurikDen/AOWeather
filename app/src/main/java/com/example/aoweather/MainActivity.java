@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this,R.string.userinputnothing,Toast.LENGTH_LONG).show();
                 }
                 else{
-                    String cityname = edittext2.getText().toString();
+                    String cityname = edittext2.getText().toString().toLowerCase().replaceAll(" ", "");
                     String APIkey = "9f0f27754d14646e7a5e490ebbb595eb";
                     String URL = "https://api.openweathermap.org/data/2.5/weather?q=" +cityname+ "&appid=" +APIkey+ "&units=metric";
 
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
                 JSONObject json = new JSONObject(result);
 
                 double c = json.getJSONObject("main").getDouble("temp");
-                String cityname = edittext2.getText().toString();
+                String cityname = edittext2.getText().toString().replaceAll(" ", "");
                 int temp = (int) Math.round(c);
 
                 double feelslike = json.getJSONObject("main").getDouble("feels_like");
@@ -126,6 +126,9 @@ public class MainActivity extends AppCompatActivity {
                         "\n" + getString(R.string.visibility)+ visibility+ "m;"+ "\n" +description+".");
             } catch (JSONException e) {
                 e.printStackTrace();
+            }catch(NullPointerException e){
+                textview2.setText(R.string.notfound);
+
             }
 
 

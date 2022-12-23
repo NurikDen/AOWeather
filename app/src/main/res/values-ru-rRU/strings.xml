@@ -10,4 +10,5 @@
     <string name="windspeed">"cкорость ветра "</string>
     <string name="visibility">"видимость: "</string>
     <string name="Wait">Ждите...</string>
+    <string name="notfound">Город не найден</string>
 </resources>
