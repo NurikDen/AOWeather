@@ -13,6 +13,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.aocompany.aoweather.R;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
