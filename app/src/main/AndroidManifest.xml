@@ -18,7 +18,7 @@
 
         <activity
 
-            android:name=".MainActivity"
+            android:name="aoweather.aocompany.aoweather.MainActivity"
             android:screenOrientation="portrait"
             android:exported="true">
 

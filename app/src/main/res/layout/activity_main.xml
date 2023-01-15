@@ -8,7 +8,7 @@
     android:background="#000000"
     android:foregroundTint="#1C611F"
 
-    tools:context=".MainActivity">
+    tools:context="aoweather.aocompany.aoweather.MainActivity">
 
     <Button
         android:id="@+id/button"

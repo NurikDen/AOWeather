@@ -1,4 +1,4 @@
-package com.example.aoweather;
+package aoweather.aocompany.aoweather;
 
 import android.content.Context;
 
