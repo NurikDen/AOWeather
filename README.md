@@ -23,3 +23,6 @@ Besides, my application print integer. Вторая версия моего пр
 
 #23.12.2022 I fixed some minor bugs. If the app can't find a city, it prints text, doesn't crash like before. Besides, it skips spaces.
 Исправил пару недочетов. Если приложение не находит город , он выводит текст, а не вылетает как раньше. Кроме того, он пропускает пробелы.
+
+#23.01.2023 Fifth version of my application. Totally updated design of my app. Besides, I deleted tatar version.
+Пятая версия моего приложения. Полностью обновленный дизайн моего приложения. Кроме того, я удалил татарскую версию.
