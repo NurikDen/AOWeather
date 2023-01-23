@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AO Weather</string>
+    <string name="langname">lang=ru</string>
+    <string name="ms">м/с</string>
+    <string name="notfound">Город не найден</string>
+    <string name="Wait">Жди...</string>
+    <string name="visibility">видимость:</string>
+    <string name="windspeed">скорость ветра:</string>
+    <string name="feelslike">чувствуется</string>
+    <string name="inputcityname">Введи город</string>
+    <string name="userinputnothing">Введи  текст</string>
+    <string name="tuman3">дымок</string>
+    <string name="tuman2">плотный туман</string>
+    <string name="pasmurno1">переменная облачность</string>
+    <string name="pasmurno2">облачно с прояснениями</string>
+    <string name="oblachno">пасмурно</string>
+    <string name="tuman1">туман</string>
+    <string name="nebo1">ясно</string>
+    <string name="nebo2">солнечно</string>
+    <string name="pasmurno3">небольшая облачность</string>
+    <string name="sneg">снежно</string>
+    <string name="sneg1">снег</string>
+    <string name="nebo3">солнце</string>
+</resources>

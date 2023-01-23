@@ -1,13 +1,25 @@
 <resources>
     <string name="app_name">AO Weather</string>
-    <string name="your_city">Your city</string>
-    <string name="textview1">Input сity name</string>
-    <string name="buttontext1">check the Weather</string>
+    <string name="inputcityname">Input сity name</string>
     <string name="userinputnothing">Input text</string>
-    <string name="Temperaturein">"Temperature in "</string>
     <string name="feelslike">"feels like "</string>
     <string name="windspeed">"wind speed: "</string>
     <string name="visibility">"visibility: "</string>
     <string name="Wait">Wait...</string>
     <string name="notfound">City not found</string>
+    <string name="ms">m/s</string>
+    <string name="langname">lang=en</string>
+    <string name="tuman1">mist</string>
+    <string name="tuman2">fog</string>
+    <string name="tuman3">smoke</string>
+    <string name="pasmurno3">broken clouds</string>
+    <string name="pasmurno2">scattered clouds</string>
+    <string name="pasmurno1">few clouds</string>
+    <string name="oblachno">overcast clouds</string>
+    <string name="sneg">light snow</string>
+    <string name="sneg1">snow</string>
+    <string name="nebo1">clear sky</string>
+    <string name="nebo2">sunny</string>
+    <string name="nebo3">sun</string>
+
 </resources>
