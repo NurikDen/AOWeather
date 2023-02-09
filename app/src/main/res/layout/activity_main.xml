@@ -8,9 +8,17 @@
     android:background="@color/black1"
 
     android:backgroundTint="@color/black1"
-    android:foregroundTint="#1C611F"
+    android:foregroundTint="@color/green1"
     tools:context="aoweather.aocompany.aoweather.MainActivity">
 
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="481dp"
+        android:layout_height="1026dp"
+        app:srcCompat="@drawable/aoweatherbackground_copy"
+        tools:layout_editor_absoluteX="-24dp"
+        tools:layout_editor_absoluteY="37dp" />
 
     <EditText
         android:id="@+id/vvod"
