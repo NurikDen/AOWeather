@@ -21,5 +21,10 @@
     <string name="nebo1">clear sky</string>
     <string name="nebo2">sunny</string>
     <string name="nebo3">sun</string>
+    <string name="lightrain">light rain</string>
+    <string name="rain">rain</string>
+    <string name="heavyrain">heavy rain</string>
+    <string name="rainy">rainy</string>
+    <string name="heavyrainy">heavy rainy</string>
 
 </resources>

@@ -31,19 +31,11 @@ public class MainActivity extends AppCompatActivity {
     private EditText edittext2;
     private TextView citynametext,temperaturetext,visibilitytext,windspeedtext,feelsliketext,descriptiontext;
     private ImageView weather,visibilityimage,windspeedimage,aoweatherimage;
-    private CardView card;
-
-
-
-
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-
         button1 = findViewById(R.id.button2);
         edittext2 = findViewById(R.id.vvod);
         citynametext = findViewById(R.id.cityname);
@@ -55,20 +47,16 @@ public class MainActivity extends AppCompatActivity {
         visibilityimage = findViewById(R.id.visibility);
         windspeedimage = findViewById(R.id.windspeed);
         descriptiontext = findViewById(R.id.description);
+        button1.setOnClickListener(view -> {
+            if (edittext2.getText().toString().trim().equals("")) {
+                Toast.makeText(MainActivity.this,R.string.userinputnothing,Toast.LENGTH_LONG).show();
+            }
+            else{
+                String cityname = edittext2.getText().toString().toLowerCase().replaceAll(" ", "");
+                String APIkey = "9f0f27754d14646e7a5e490ebbb595eb";
+                String URL = "https://api.openweathermap.org/data/2.5/weather?q=" +cityname+ "&appid=" +APIkey+ "&units=metric"+"&"+getString(R.string.langname);
 
-
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (edittext2.getText().toString().trim().equals("")) {
-                    Toast.makeText(MainActivity.this,R.string.userinputnothing,Toast.LENGTH_LONG).show();
-                }
-                else{
-                    String cityname = edittext2.getText().toString().toLowerCase().replaceAll(" ", "");
-                    String APIkey = "9f0f27754d14646e7a5e490ebbb595eb";
-                    String URL = "https://api.openweathermap.org/data/2.5/weather?q=" +cityname+ "&appid=" +APIkey+ "&units=metric"+"&"+getString(R.string.langname);
-
-                    new APIData().execute(URL);}}});
+                new APIData().execute(URL);}});
     }
     @SuppressLint("StaticFieldLeak")
     private class APIData extends AsyncTask<String,String,String> {
@@ -139,7 +127,8 @@ public class MainActivity extends AppCompatActivity {
 
                 int visibility = json.getInt("visibility");
 
-                if (description.equals(getString(R.string.oblachno))) {
+
+                if (description.equals(getString(R.string.oblachno)) || description.equals(getString(R.string.lightrain)) || description.equals(getString(R.string.rain)) || description.equals(getString(R.string.heavyrain)) || description.equals(getString(R.string.rainy)) || description.equals(getString(R.string.heavyrainy))) {
                     weather.setImageResource(R.drawable.overcast_clouds);
                 }
                 else if(description.equals(getString(R.string.sneg)) || description.equals(getString(R.string.sneg1))) {
@@ -148,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                 else if(description.equals(getString(R.string.nebo1))||description.equals(getString(R.string.nebo2)) || description.equals(getString(R.string.nebo3))) {
                     weather.setImageResource(R.drawable.sun);
                 }
-                else if (description.equals(getString(R.string.pasmurno1)) || description.equals(getString(R.string.pasmurno2)) || description.equals(getString(R.string.pasmurno3))) {
+                else if (description.equals(getString(R.string.pasmurno1)) || description.equals(getString(R.string.pasmurno2)) || description.equals(getString(R.string.pasmurno3)) ) {
                     weather.setImageResource(R.drawable.few_clouds);
                 }
                 else if (description.equals(getString(R.string.tuman1)) || description.equals(getString(R.string.tuman2)) || description.equals(getString(R.string.tuman3))) {
@@ -157,21 +146,19 @@ public class MainActivity extends AppCompatActivity {
                 else {
                     weather.setImageResource(R.drawable.sun);
                 }
-                temperaturetext.setText(Integer.toString(temp)+"°C");
+                temperaturetext.setText(Integer.toString(temp)+"°C"); //Temperature
                 weather.setVisibility(View.VISIBLE);
                 visibilityimage.setVisibility(View.VISIBLE);
                 windspeedimage.setVisibility(View.VISIBLE);
-                feelsliketext.setText("("+Integer.toString(feels)+"°C"+")");
-                windspeedtext.setText(Integer.toString(wind)+"m/s");
-                visibilitytext.setText(Integer.toString(visibility)+"m");
-                citynametext.setText(cityname);
-                descriptiontext.setText(description);
-
-
+                feelsliketext.setText("("+Integer.toString(feels)+"°C"+")"); //Feels like
+                windspeedtext.setText(Integer.toString(wind)+"m/s");// wind speed
+                visibilitytext.setText(Integer.toString(visibility)+"m");//Visibility
+                citynametext.setText(cityname); // city name
+                descriptiontext.setText(description);//description
             } catch (JSONException e) {
                 e.printStackTrace();
             }catch(NullPointerException e){
-                citynametext.setText(R.string.notfound);
+                citynametext.setText(R.string.notfound);//Finalprint
             }
         }
     }

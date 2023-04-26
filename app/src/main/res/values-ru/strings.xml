@@ -22,4 +22,9 @@
     <string name="sneg">снежно</string>
     <string name="sneg1">снег</string>
     <string name="nebo3">солнце</string>
+    <string name="lightrain">небольшой дождь</string>
+    <string name="rain">дождь</string>
+    <string name="heavyrain">ливень</string>
+    <string name="heavyrainy">сильный ливень</string>
+    <string name="rainy">сильный дождь</string>
 </resources>
